@@ -1,12 +1,12 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Products } from "./pages/Products";
+import { AppMenuBar } from "./components/AppMenuBar";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Link to="/">Home</Link>&nbsp;
-      <Link to="/products">About</Link>&nbsp;
+      <AppMenuBar></AppMenuBar>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
