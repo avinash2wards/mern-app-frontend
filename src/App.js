@@ -1,5 +1,16 @@
-function App() {
-  return <h1>Hello React</h1>;
-}
+import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Products } from "./pages/Products";
 
-export default App;
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
+export { App };
