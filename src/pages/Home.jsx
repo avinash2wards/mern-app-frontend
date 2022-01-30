@@ -14,7 +14,7 @@ const Home = () => {
           Go to Quotes
         </Link>
       </div>
-      <div className="card-footer text-muted">2 days ago</div>
+      {/* <div className="card-footer text-muted">2 days ago</div> */}
     </div>
   );
 };
